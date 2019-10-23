@@ -15,6 +15,7 @@ void resetFib() {
 
 int main() {
     for (int i = 0; i < 10; ++i) {
+        fib();
         std::cout << F0 << std::endl;
     }
     return 0;
