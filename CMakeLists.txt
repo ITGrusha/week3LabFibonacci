@@ -3,4 +3,4 @@ project(weekXLabFibonacci)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(weekXLabFibonacci main.cpp)
+add_executable(week3LabFibonacci main.cpp FibX.hpp FibX.cpp)

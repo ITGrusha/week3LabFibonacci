@@ -1,22 +1,14 @@
 #include <iostream>
 
-unsigned long long F0 = 0, F1 = 1;
+#include "FibX.hpp"
 
-unsigned long long fib() {
-    F0 = F0 + F1;
-    F1 = F0 - F1;
-    return F0;
-}
-
-void resetFib() {
-    F0 = 0;
-    F1 = 1;
-}
+#define KEY_LENGTH 3
 
 int main() {
+    FibX FibSeq(KEY_LENGTH);
     for (int i = 0; i < 10; ++i) {
-        fib();
-        std::cout << F0 << std::endl;
+        long long elem = FibSeq.GetNextElement();
+        std::cout << elem << std::endl;
     }
     return 0;
 }
