@@ -22,7 +22,7 @@ struct SEQUENCE_DEPTH_EXCEPTION : std::exception {
 class FibX {
 
 public:
-    FibX(long long);
+    explicit FibX(long long);
 
     long long GetNextElement();
 
